@@ -79,9 +79,6 @@ function ThirdContent() {
           </div>
         </div>
       </div>
-      <div className="px-4 py-2 font-semibold text-center text-indigo-700 border-2 border-indigo-700 rounded-full text-md my-36 mx-96 hover:bg-indigo-700 hover:text-white">
-        See more on Dribbble
-      </div>
     </div>
   );
 }

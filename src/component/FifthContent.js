@@ -1,4 +1,11 @@
 import React from "react";
+import HackLogo from "../images/HackLogo.png";
+import Shoppee from "../images/Shoppee.img";
+import Twitter from "../images/Twitter.png";
+import Login from "../images/Login.png";
+import Dashboard from "../images/Dashboard.png";
+import Todolist from "../images/Todolist.png";
+import { Link } from "react-router-dom";
 
 function FifthContent() {
   return (
@@ -10,7 +17,7 @@ function FifthContent() {
               <div className="mb-4 text-2xl font-semibold">
                 My Startup Projects
               </div>
-              <div className="pb-32 text-sm font-normal leading-loose">
+              <div className="pb-32 text-base font-medium leading-loose">
                 I'm a bit of a digital product junky. Over the years, I've used
                 hundreds of web and mobile apps in different industries and
                 verticals. Eventually, I decided that it would be a fun
@@ -20,49 +27,57 @@ function FifthContent() {
           </div>
           <div className="absolute h-auto max-w-5xl mx-auto text-center text-black rounded-lg top-3/4 inset-x-32">
             <div className="grid grid-cols-3 gap-4">
-              <div className="h-full p-12 bg-white border border-blue-100 rounded-2xl">
-                <p className="pb-4 font-sans text-lg font-semibold">LOGO</p>
-                <p className="pb-6 text-xs leading-loose">
-                  Next level plug and play chassis systems for custom
-                  do-it-yourself lightsaber builds.
-                </p>
+              <div className="h-full p-1 duration-200 ease-in transform rounded-2xl hover:scale-110">
+                <Link to="/hack-reactor">
+                  <img
+                    className="w-full rounded-2xl"
+                    src={HackLogo}
+                    alt="hackreactor"
+                  />
+                </Link>
               </div>
-              <div className="h-full p-12 bg-white border border-blue-100 rounded-2xl">
-                <p className="pb-4 font-sans text-lg font-semibold">LOGO</p>
-                <p className="pb-6 text-xs leading-loose">
-                  Simple feedback and engagement tools for teams that want to
-                  build and ship winning products.
-                </p>
+              <div className="h-full p-1 duration-200 ease-in transform rounded-2xl hover:scale-110">
+                <Link to="/shoppee">
+                  <img
+                    className="w-full rounded-2xl"
+                    src={Shoppee}
+                    alt="shoppee"
+                  />
+                </Link>
               </div>
-              <div className="h-full p-12 bg-white border border-blue-100 rounded-2xl">
-                <p className="pb-4 font-sans text-lg font-semibold">LOGO</p>
-                <p className="pb-6 text-xs leading-loose">
-                  A powerful, easy-to-configure form backend for designers and
-                  developers. No coding required.
-                </p>
+              <div className="h-full p-1 rounded-2xl duration-200 ease-in transform bg-white hover:scale-110">
+                <Link to="/Twitter">
+                  <img
+                    className="w-full rounded-2xl"
+                    src={Twitter}
+                    alt="twitter"
+                  />
+                </Link>
               </div>
             </div>
             <div className="grid grid-cols-3 gap-4">
-              <div className="h-full p-12 mt-4 bg-white border border-blue-100 rounded-2xl">
-                <p className="pb-4 font-sans text-lg font-semibold">LOGO</p>
-                <p className="pb-6 text-xs leading-loose">
-                  Beautifully simple websites for independent distributors of
-                  Young Living Essential Oils.
-                </p>
+              <div className="h-full p-1 mt-4 rounded-2xl duration-200 ease-in transform bg-white hover:scale-110">
+                <Link to="/Login">
+                  <img className="w-full rounded-2xl" src={Login} alt="login" />
+                </Link>
               </div>
-              <div className="h-full p-12 mt-4 bg-white border border-blue-100 rounded-2xl">
-                <p className="pb-4 font-sans text-lg font-semibold">LOGO</p>
-                <p className="pb-6 text-xs leading-loose">
-                  A collaborative tool for creating simple, effective user
-                  personas for design projects.
-                </p>
+              <div className="h-full p-1 mt-4 rounded-2xl duration-200 ease-in transform bg-white hover:scale-110">
+                <Link to="/Dashboard">
+                  <img
+                    className="w-full rounded-2xl"
+                    src={Dashboard}
+                    alt="dashboard"
+                  />
+                </Link>
               </div>
-              <div className="h-full p-12 mt-4 bg-white border border-blue-100 rounded-2xl">
-                <p className="pb-4 font-sans text-lg font-semibold">LOGO</p>
-                <p className="pb-6 text-xs leading-loose">
-                  A space and member management solution for coworking
-                  communities both big and small.
-                </p>
+              <div className="h-full p-1 mt-4 duration-200 ease-in transform bg-white hover:scale-110 rounded-2xl">
+                <Link to="/Todolist">
+                  <img
+                    className="w-full rounded-2xl"
+                    src={Todolist}
+                    alt="todolist"
+                  />
+                </Link>
               </div>
             </div>
           </div>
@@ -75,7 +90,7 @@ function FifthContent() {
           I’m always open to discussing product design work or partnership
           opportunities.
         </div>
-        <button className="px-6 py-2 text-xl text-center text-indigo-700 border-2 border-indigo-700 rounded-full hover:text-white hover:bg-indigo-700">
+        <button className="px-6 py-2 text-xl text-center text-indigo-700 border-2 border-indigo-800 rounded-full hover:text-white hover:bg-indigo-700">
           Start a conversation
         </button>
       </div>

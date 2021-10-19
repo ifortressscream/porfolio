@@ -1,37 +1,27 @@
+import { Switch, Route } from "react-router";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
 import "./styles/customStyle.css";
-import Header from "./component/Header";
-import ProfileBody from "./component/ProfileBody";
-import FirstContent from "./component/FirstContent";
-import SecondContent from "./component/SecondContent";
-import ThirdContent from "./component/ThirdContent";
-import FourthContent from "./component/FourthContent";
-import FifthContent from "./component/FifthContent";
-import SixthContent from "./component/SixthContent";
-import SeventhContent from "./component/SeventhContent";
+import HackReactor from "./pages/HackReactor";
+import ShoppeeSite from "./component/hack-reactor/ShoppeeSite/ShoppeeSite";
 
 function App() {
   return (
     <div>
-      {/* Header */}
-      <Header />
-      {/* Profile Body */}
-      <ProfileBody />
-      {/* FirstContent */}
-      <FirstContent />
-      <div className="h-full">
-        {/* SecondContent */}
-        <SecondContent />
-      </div>
-      {/* ThirdContent */}
-      <ThirdContent />
-      {/* FourthContent */}
-      <FourthContent />
-      {/* FifthContent */}
-      <FifthContent />
-      {/* SixthContent */}
-      <SixthContent />
-      {/* SeventhContent */}
-      <SeventhContent />
+      <Switch>
+        <Route exact path="/home">
+          <Home />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/hack-reactor">
+          <HackReactor />
+        </Route>
+        <Route path="/shoppee">
+          <ShoppeeSite />
+        </Route>
+      </Switch>
     </div>
   );
 }

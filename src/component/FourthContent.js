@@ -1,21 +1,61 @@
 import React from "react";
+import Materialui from "../images/Materialui.img";
+import Csslogo from "../images/Csslogo.img";
+import Htmllogo from "../images/Htmllogo.img";
+import Reactlogo from "../images/Reactlogo.img";
+import Jslogo from "../images/Jslogo.img";
+import Tailwindlogo from "../images/Tailwindlogo.img";
 
 function FourthContent() {
   return (
-    <div className="w-full h-screen border-t border-blue-100">
-      <div className="max-w-5xl mx-auto font-sans text-3xl font-extrabold text-center border border-blue-800 m-28 h-3/4">
-        I'm proud to have collaborated
-        <p>with some awesome companies:</p>
-        <div className="grid grid-cols-3 grid-rows-2">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
+    <div className="w-full border-t border-blue-100 h-1/4">
+      <div className="p-16 mx-auto font-sans text-2xl font-extrabold text-center max-w-7xl m-28">
+        <p>TECH STUFF</p>
+        <div>
+          <div className="flex flex-row justify-between h-full pt-12 mx-auto max-w-7xl">
+            <div className="w-1/6 h-48 p-4 m-2 my-2 bg-white border border-gray-100 shadow-2xl">
+              <img
+                className="w-full duration-200 ease-in transform shadow-2xl lg:h-full hover:scale-110"
+                src={Materialui}
+                alt="material ui logo"
+              />
+            </div>
+            <div className="w-1/6 h-48 p-4 m-2 my-2 bg-white border border-gray-100 shadow-2xl">
+              <img
+                className="w-full duration-200 ease-in transform shadow-2xl lg:h-full hover:scale-110"
+                src={Csslogo}
+                alt="css logo"
+              />
+            </div>
+            <div className="w-1/6 h-48 p-4 m-2 my-2 bg-white border border-gray-100 shadow-2xl">
+              <img
+                className="w-full duration-200 ease-in transform shadow-2xl lg:h-full hover:scale-110"
+                src={Htmllogo}
+                alt="html logo"
+              />
+            </div>
+            <div className="w-1/6 h-48 p-4 m-2 my-2 bg-white border border-gray-100 shadow-2xl">
+              <img
+                className="w-full duration-200 ease-in transform shadow-2xl lg:h-full hover:scale-110"
+                src={Reactlogo}
+                alt=""
+              />
+            </div>
+            <div className="w-1/6 h-48 p-4 m-2 my-2 bg-white border border-gray-100 shadow-2xl">
+              <img
+                className="w-full duration-200 ease-in transform shadow-2xl lg:h-full hover:scale-110"
+                src={Jslogo}
+                alt=""
+              />
+            </div>
+            <div className="w-1/6 h-48 p-4 m-2 my-2 bg-white border border-gray-100 shadow-2xl">
+              <img
+                className="w-full duration-200 ease-in transform shadow-2xl lg:h-full hover:scale-110"
+                src={Tailwindlogo}
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
